@@ -44,7 +44,154 @@ function App() {
     }
   ]
 
-  const [colaboradores, setColaboradores] = useState([])
+  const inicial = [
+    {
+      nome: 'Nina Moraes',
+      cargo: 'Desenvolvedora de software',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[0].nome
+    },
+    {
+      nome: 'Ângelo Soares',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[0].nome
+    },
+    {
+      nome: 'Clara Ferraz',
+      cargo: 'Desenvolvedora Python e JavaScript',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[0].nome
+    },
+    {
+      nome: 'Murilo Batista',
+      cargo: 'Hipster e CEO',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[0].nome
+    },
+    {
+      nome: 'Ravi Felipe Silva',
+      cargo: 'Desenvolvedor de software',
+      imagem: 'https://github.com/ravifel.png',
+      time: times[1].nome
+    },
+    {
+      nome: 'Ângelo Soares',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[1].nome
+    },
+    {
+      nome: 'Clara Ferraz',
+      cargo: 'Desenvolvedora Python e JavaScript',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[1].nome
+    },
+    {
+      nome: 'Murilo Batista',
+      cargo: 'Hipster e CEO',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[1].nome
+    },
+    {
+      nome: 'Nina Moraes',
+      cargo: 'Desenvolvedora de software',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[2].nome
+    },
+    {
+      nome: 'Ângelo Soares',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[2].nome
+    },
+    {
+      nome: 'Clara Ferraz',
+      cargo: 'Desenvolvedora Python e JavaScript',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[2].nome
+    },
+    {
+      nome: 'Murilo Batista',
+      cargo: 'Hipster e CEO',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[2].nome
+    },
+    {
+      nome: 'Nina Moraes',
+      cargo: 'Desenvolvedora de software',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[3].nome
+    },
+    {
+      nome: 'Ângelo Soares',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[3].nome
+    },
+    {
+      nome: 'Clara Ferraz',
+      cargo: 'Desenvolvedora Python e JavaScript',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[3].nome
+    },
+    {
+      nome: 'Murilo Batista',
+      cargo: 'Hipster e CEO',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[3].nome
+    },
+    {
+      nome: 'Nina Moraes',
+      cargo: 'Desenvolvedora de software',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[4].nome
+    },
+    {
+      nome: 'Ângelo Soares',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[4].nome
+    },
+    {
+      nome: 'Clara Ferraz',
+      cargo: 'Desenvolvedora Python e JavaScript',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[4].nome
+    },
+    {
+      nome: 'Murilo Batista',
+      cargo: 'Hipster e CEO',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[4].nome
+    },
+    {
+      nome: 'Nina Moraes',
+      cargo: 'Desenvolvedora de software',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[5].nome
+    },
+    {
+      nome: 'Ângelo Soares',
+      cargo: 'Engenheiro de Software',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[5].nome
+    },
+    {
+      nome: 'Clara Ferraz',
+      cargo: 'Desenvolvedora Python e JavaScript',
+      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      time: times[5].nome
+    },
+    {
+      nome: 'Murilo Batista',
+      cargo: 'Hipster e CEO',
+      imagem: 'https://cdn.pixabay.com/photo/2012/04/13/21/07/user-33638_960_720.png',
+      time: times[5].nome
+    },
+  ]
+
+  const [colaboradores, setColaboradores] = useState(inicial)
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
     //debugger

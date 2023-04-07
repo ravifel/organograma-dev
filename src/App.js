@@ -216,8 +216,7 @@ function App() {
           <Time
             key={time.nome}
             nome={time.nome}
-            corPrimaria={time.corPrimaria}
-            corSecundaria={time.corSecundaria}
+            cor={time.cor}
             colaboradores={colaboradores.filter(
               colaborador => colaborador.time === time.nome
             )}

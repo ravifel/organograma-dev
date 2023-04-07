@@ -65,9 +65,9 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Clara Ferraz',
-      cargo: 'Desenvolvedora Python e JavaScript',
-      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      nome: 'Ravi Felipe Silva',
+      cargo: 'Desenvolvedor de software',
+      imagem: 'https://github.com/ravifel.png',
       time: times[0].nome
     },
     {
@@ -98,7 +98,7 @@ function App() {
       id: uuidv4(),
       favorito: false,
       nome: 'Clara Ferraz',
-      cargo: 'Desenvolvedora Python e JavaScript',
+      cargo: 'Desenvolvedora Python',
       imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
       time: times[1].nome
     },
@@ -113,9 +113,9 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Nina Moraes',
-      cargo: 'Desenvolvedora de software',
-      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      nome: 'Ravi Felipe Silva',
+      cargo: 'Desenvolvedor de software',
+      imagem: 'https://github.com/ravifel.png',
       time: times[2].nome
     },
     {
@@ -130,7 +130,7 @@ function App() {
       id: uuidv4(),
       favorito: false,
       nome: 'Clara Ferraz',
-      cargo: 'Desenvolvedora Python e JavaScript',
+      cargo: 'Desenvolvedora Python',
       imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
       time: times[2].nome
     },
@@ -145,9 +145,9 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Nina Moraes',
-      cargo: 'Desenvolvedora de software',
-      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      nome: 'Ravi Felipe Silva',
+      cargo: 'Desenvolvedor de software',
+      imagem: 'https://github.com/ravifel.png',
       time: times[3].nome
     },
     {
@@ -162,7 +162,7 @@ function App() {
       id: uuidv4(),
       favorito: false,
       nome: 'Clara Ferraz',
-      cargo: 'Desenvolvedora Python e JavaScript',
+      cargo: 'Desenvolvedora Python',
       imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
       time: times[3].nome
     },
@@ -177,9 +177,9 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Nina Moraes',
-      cargo: 'Desenvolvedora de software',
-      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      nome: 'Ravi Felipe Silva',
+      cargo: 'Desenvolvedor de software',
+      imagem: 'https://github.com/ravifel.png',
       time: times[4].nome
     },
     {
@@ -194,7 +194,7 @@ function App() {
       id: uuidv4(),
       favorito: false,
       nome: 'Clara Ferraz',
-      cargo: 'Desenvolvedora Python e JavaScript',
+      cargo: 'Desenvolvedora Python',
       imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
       time: times[4].nome
     },
@@ -209,9 +209,9 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Nina Moraes',
-      cargo: 'Desenvolvedora de software',
-      imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
+      nome: 'Ravi Felipe Silva',
+      cargo: 'Desenvolvedor de software',
+      imagem: 'https://github.com/ravifel.png',
       time: times[5].nome
     },
     {
@@ -226,7 +226,7 @@ function App() {
       id: uuidv4(),
       favorito: false,
       nome: 'Clara Ferraz',
-      cargo: 'Desenvolvedora Python e JavaScript',
+      cargo: 'Desenvolvedora Python',
       imagem: 'https://cdn.pixabay.com/photo/2021/02/12/07/03/icon-6007530_960_720.png',
       time: times[5].nome
     },

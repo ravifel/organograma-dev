@@ -8,7 +8,8 @@ const Time = (
         time,
         colaboradores,
         aoFavoritar,
-        aoDeletar
+        aoDeletar,
+        mudarCor
     }
 ) => {
     return (
@@ -19,6 +20,12 @@ const Time = (
                 className='time'
                 style={{ backgroundColor: hexToRgba(time.cor, 0.33) }}
             >
+                <input
+                    type='color'
+                    className='input-cor'
+                    value={time.cor}
+                    onChange={evento => mudarCor(evento.target.value, time.id)}
+                />
                 <h3 style={{ borderColor: time.cor }}>{time.nome}</h3>
 
                 <div className='colaboradores'>

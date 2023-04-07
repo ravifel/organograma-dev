@@ -274,6 +274,18 @@ function App() {
     ))
   }
 
+  //MUDAR COR DO TIME
+  const mudarCorDoTime = (cor, id) => {
+    setTimes(times.map(
+      time => {
+        if (time.id === id) {
+          time.cor = cor;
+        }
+        return time;
+      }
+    ));
+  }
+
 
 
   return (
@@ -296,6 +308,8 @@ function App() {
               )}
               aoFavoritar={resolverFavorito}
               aoDeletar={deletarColaborador}
+              mudarCor={mudarCorDoTime}
+
             />
         )}
       </section>

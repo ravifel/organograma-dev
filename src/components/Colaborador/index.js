@@ -9,6 +9,16 @@ const Colaborador = (
         aoFavoritar
     }
 ) => {
+
+    const favoritar = () => {
+        aoFavoritar(colaborador.id)
+    }
+
+    const propsFavorito = {
+        size: 25,
+        onClick: favoritar
+    }
+
     return (
         <div className='colaborador'>
             <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
@@ -19,8 +29,8 @@ const Colaborador = (
                 <h5>{colaborador.cargo}</h5>
                 <div className='favoritar'>
                     {colaborador.favorito
-                        ? <AiFillHeart size={25} onClick={() => aoFavoritar(colaborador.id)} color='red' />
-                        : <AiOutlineHeart size={25} onClick={() => aoFavoritar(colaborador.id)} />}</div>
+                        ? <AiFillHeart {...propsFavorito} color='red' />
+                        : <AiOutlineHeart {...propsFavorito} />}</div>
             </div>
         </div>
     )

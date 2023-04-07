@@ -6,7 +6,8 @@ import hexToRgba from 'hex-to-rgba'
 const Time = (
     {
         time,
-        colaboradores
+        colaboradores,
+        aoFavoritar
     }
 ) => {
     return (
@@ -26,6 +27,7 @@ const Time = (
                                 key={indice}
                                 colaborador={colaborador}
                                 corDeFundo={time.cor}
+                                aoFavoritar={aoFavoritar}
                             />
                     )}
                 </div>

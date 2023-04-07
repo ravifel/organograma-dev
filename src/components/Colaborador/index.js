@@ -1,10 +1,12 @@
 import React from 'react'
 import "./Colaborador.css"
+import { AiFillHeart, AiOutlineHeart } from "react-icons/ai"
 
 const Colaborador = (
     {
         colaborador,
-        corDeFundo
+        corDeFundo,
+        aoFavoritar
     }
 ) => {
     return (
@@ -15,6 +17,10 @@ const Colaborador = (
             <div className='rodape'>
                 <h4 style={{ textTransform: 'uppercase' }}>{colaborador.nome}</h4>
                 <h5>{colaborador.cargo}</h5>
+                <div className='favoritar'>
+                    {colaborador.favorito
+                        ? <AiFillHeart size={25} onClick={() => aoFavoritar(colaborador.id)} color='red' />
+                        : <AiOutlineHeart size={25} onClick={() => aoFavoritar(colaborador.id)} />}</div>
             </div>
         </div>
     )

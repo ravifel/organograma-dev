@@ -1,10 +1,10 @@
 import React from 'react'
 import "./Botao.css"
 
-const Botao = (props) => {
+const Botao = ({ texto }) => {
     return (
         <button className='botao'>
-            {props.label}
+            {texto}
         </button>
     )
 }

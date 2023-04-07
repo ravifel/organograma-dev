@@ -31,7 +31,7 @@ const Rodape = () => {
                     Desenvolvido por Alura.
                 </p>
                 <p>
-                    Curso - React: desenvolvendo com JavaScript
+                    Aluno: Ravi Felipe Silva
                 </p>
             </section>
         </footer>

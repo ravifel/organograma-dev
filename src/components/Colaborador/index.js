@@ -1,15 +1,20 @@
 import React from 'react'
 import "./Colaborador.css"
 
-const Colaborador = (props) => {
+const Colaborador = (
+    {
+        colaborador,
+        corDeFundo
+    }
+) => {
     return (
         <div className='colaborador'>
-            <div className='cabecalho' style={{ backgroundColor: props.corDeFundo }}>
-                <img src={props.imagem} alt={props.nome} />
+            <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
+                <img src={colaborador.imagem} alt={colaborador.nome} />
             </div>
             <div className='rodape'>
-                <h4 style={{ textTransform: 'uppercase' }}>{props.nome}</h4>
-                <h5>{props.cargo}</h5>
+                <h4 style={{ textTransform: 'uppercase' }}>{colaborador.nome}</h4>
+                <h5>{colaborador.cargo}</h5>
             </div>
         </div>
     )

@@ -7,7 +7,8 @@ const Time = (
     {
         time,
         colaboradores,
-        aoFavoritar
+        aoFavoritar,
+        aoDeletar
     }
 ) => {
     return (
@@ -28,6 +29,7 @@ const Time = (
                                 colaborador={colaborador}
                                 corDeFundo={time.cor}
                                 aoFavoritar={aoFavoritar}
+                                aoDeletar={aoDeletar}
                             />
                     )}
                 </div>

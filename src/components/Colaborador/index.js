@@ -1,12 +1,13 @@
 import React from 'react'
 import "./Colaborador.css"
-import { AiFillHeart, AiOutlineHeart } from "react-icons/ai"
+import { AiFillHeart, AiOutlineHeart, AiFillCloseCircle } from "react-icons/ai"
 
 const Colaborador = (
     {
         colaborador,
         corDeFundo,
-        aoFavoritar
+        aoFavoritar,
+        aoDeletar
     }
 ) => {
 
@@ -21,6 +22,11 @@ const Colaborador = (
 
     return (
         <div className='colaborador'>
+            <AiFillCloseCircle
+                className='deletar'
+                size={25}
+                onClick={() => aoDeletar(colaborador.id)}
+            />
             <div className='cabecalho' style={{ backgroundColor: corDeFundo }}>
                 <img src={colaborador.imagem} alt={colaborador.nome} />
             </div>

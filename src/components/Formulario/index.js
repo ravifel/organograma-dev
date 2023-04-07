@@ -5,11 +5,14 @@ import ListaSuspensa from '../ListaSuspensa'
 import Botao from '../Botao'
 
 const Formulario = (props) => {
-
+    //STATE COLABORADOR
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [time, setTime] = useState('')
+    //STATE TIME
+    const [nomeTime, setNomeTime] = useState('')
+    const [corTime, setCorTime] = useState('')
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
@@ -59,6 +62,29 @@ const Formulario = (props) => {
                 />
                 <Botao
                     label="Criar card"
+                />
+            </form>
+            <form onSubmit={(evento) => {
+                evento.preventDefault()
+                props.cadastrarTime({ nome: nomeTime, cor: corTime })
+            }}>
+                <h2>Preencha os dados para criar um novo time</h2>
+                <CampoTexto
+                    obrigatorio={true}
+                    label="Time"
+                    placeholder="Digite o time"
+                    valor={nomeTime}
+                    aoAlterado={valor => setNomeTime(valor)}
+                />
+                <CampoTexto
+                    obrigatorio={true}
+                    label="CorTime"
+                    placeholder="Digite a cor do time"
+                    valor={corTime}
+                    aoAlterado={valor => setCorTime(valor)}
+                />
+                <Botao
+                    label="Criar novo time"
                 />
             </form>
         </section>

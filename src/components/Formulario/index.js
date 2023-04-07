@@ -36,8 +36,8 @@ const Formulario = (
     }
 
     return (
-        <section className='formulario'>
-            <form onSubmit={aoSubmeter}>
+        <section className='formulario-container'>
+            <form className='formulario' onSubmit={aoSubmeter}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
                 <Campo
                     obrigatorio={true}
@@ -70,7 +70,7 @@ const Formulario = (
                     texto="Criar card"
                 />
             </form>
-            <form onSubmit={(evento) => {
+            <form className='formulario' onSubmit={(evento) => {
                 evento.preventDefault()
                 cadastrarTime({ nome: nomeTime, cor: corTime })
             }}>

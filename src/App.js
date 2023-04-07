@@ -235,16 +235,19 @@ function App() {
         aoCadastrar={colaborador => aoNovoColaboradorAdicionado(colaborador)}
         cadastrarTime={cadastrarTime}
       />
-      {times.map(
-        (time, indice) =>
-          <Time
-            key={indice}
-            time={time}
-            colaboradores={colaboradores.filter(
-              colaborador => colaborador.time === time.nome
-            )}
-          />
-      )}
+      <section className='times'>
+        <h1>Minha Organização</h1>
+        {times.map(
+          (time, indice) =>
+            <Time
+              key={indice}
+              time={time}
+              colaboradores={colaboradores.filter(
+                colaborador => colaborador.time === time.nome
+              )}
+            />
+        )}
+      </section>
       <div>
         <Rodape />
       </div>

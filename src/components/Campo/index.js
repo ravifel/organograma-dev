@@ -16,7 +16,7 @@ const Campo = (
     }
 
     return (
-        <div className='campo'>
+        <div className={`campo campo-${type}`}>
             <label>
                 {label}
             </label>
